@@ -2,31 +2,313 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-body {
-  background-color: black;
-  color: white;
-  font-family: "League Gothic", sans-serif;
+li {
+  list-style: none;
 }
 
-body header h1 {
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: stretch;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+nav .logo {
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: stretch;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  border-bottom: 5px solid white;
+}
+
+nav ul li.active {
+  border-bottom: 5px solid #0c7cec;
+}
+
+nav ul li.active a {
+  color: #0c7cec;
+}
+
+nav ul li:hover a {
+  color: #0c7cec;
+}
+
+nav ul li:hover {
+  border-bottom: 5px solid #0c7cec;
+}
+
+nav ul li a {
+  text-decoration: none;
   text-transform: uppercase;
-  font-size: 6rem;
+  font-weight: bold;
+  color: #494949;
+  font-size: 14px;
+}
+
+.jambo {
+  position: relative;
+}
+
+.imgcontainer {
+  height: 45vh;
+  overflow: hidden;
+  max-height: 400px;
+  min-height: 220px;
+}
+
+.imgcontainer img {
+  width: 100%;
+}
+
+#titlespan {
+  padding: 10px;
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  background-color: #0c7cec;
+  position: absolute;
+  left: 15%;
+  bottom: -20px;
+}
+
+div.content {
+  width: 70%;
+  margin: auto;
+  position: relative;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+div.content .comic-card {
+  display: inline-block;
+  width: 16.6666666667%;
+  padding: 0 20px;
+  text-align: start;
+}
+
+div.content .comic-card .img {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+
+div.content .comic-card .txt {
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 0;
+}
+
+main {
+  background: #1c1c1c;
   text-align: center;
 }
 
-body main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+main .content {
   width: 80%;
   margin: auto;
+  position: relative;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
-body main .comic-card {
-  width: 190px;
-  margin: 40px;
-  font-size: 1.4rem;
+main .content .comic-card {
+  display: inline-block;
+  width: 16.6666666667%;
+  padding: 0 20px;
+  text-align: start;
+}
+
+main .content .comic-card .img {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+
+main .content .comic-card .txt {
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 0;
+}
+
+.container-main {
+  margin: auto;
+  width: 70%;
+  color: white;
+}
+
+#loadmore {
+  background-color: #0c7cec;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: white;
+  display: inline-block;
+  padding: 10px 60px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.merchandise {
+  background-color: #0c7cec;
+  padding: 50px;
+}
+
+.merchandise ul {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.merchandise ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merchandise ul li img {
+  height: 60px;
+  max-width: 60px;
+}
+
+.merchandise ul li a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+footer .footer-links {
+  background-image: url("/img/footer-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+footer .footer-links #biglogo {
+  position: absolute;
+  bottom: 50%;
+  right: 20%;
+  transform: translate(0%, 50%);
+}
+
+footer .footer-links .links-container-footer {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  height: 100%;
+}
+
+footer .footer-links .links-container-footer .mini-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 30%;
+}
+
+footer .footer-links .links-container-footer .mini-container ul {
+  padding: 20px 20px 20px 0;
+  align-self: flex-start;
+}
+
+footer .footer-links .links-container-footer .mini-container ul .title-li {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+}
+
+footer .footer-links .links-container-footer .mini-container ul .small-li {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+footer .footer-links .links-container-footer .mini-container ul .small-li a {
+  display: inline-block;
+  color: #989694;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.container,
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img,
+.socials img {
+  margin: 0 10px;
+}
+
+.socialsBar {
+  padding: 40px;
+  background-color: #303030;
+  justify-content: space-between;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+span {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #0c7cec;
+  font-size: 20px;
+}
+
+.signup {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border: #0c7cec 2px solid;
+}
+
+.signup a {
+  padding: 20px 15px;
+  display: inline-block;
 }
 

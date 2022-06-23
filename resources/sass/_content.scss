@@ -1,0 +1,30 @@
+
+div.content{
+    width: 70%;
+    margin: auto;
+    position: relative;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    .comic-card{
+        display: inline-block;
+        width: calc((100% / 6));
+        padding: 0 20px;
+        text-align: start;
+    .img{
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+        }
+        .txt{
+            color: white;
+            text-transform: uppercase;
+            display: inline-block;
+            padding:15px 0 ;
+        }
+    }
+
+
+}

@@ -1,0 +1,51 @@
+main{
+    background: #1c1c1c;
+    text-align: center;
+    .content{
+        width: 80%;
+        margin: auto;
+        position: relative;
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-between;
+        .comic-card{
+            display: inline-block;
+            width: calc((100% / 6));
+            padding: 0 20px;
+            text-align: start;
+        .img{
+                overflow: hidden;
+                width: 200px;
+                height: 200px;
+            }
+            .txt{
+                color: white;
+                text-transform: uppercase;
+                display: inline-block;
+                padding:15px 0 ;
+            }
+        }
+
+
+    }
+
+}
+.container-main{
+    margin: auto;
+    width: $conWidth;
+    color: white;
+
+}
+
+#loadmore{
+    background-color: $logoColor;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    display: inline-block;
+    padding: 10px 60px;
+    margin: auto;
+    margin-bottom: 20px;
+}

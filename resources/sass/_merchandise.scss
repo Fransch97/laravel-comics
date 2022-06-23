@@ -1,0 +1,25 @@
+.merchandise{
+    background-color: $logoColor;
+    padding: 50px;
+    ul{
+        width: $conWidth;
+        margin: auto;
+        @include flexCen();
+        justify-content: space-around;
+
+        li {
+            @include flexCen();
+            img{
+                height: 60px;
+                max-width: 60px;
+            }
+            a{
+                text-transform: uppercase;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                margin-left: 10px;
+            }
+        }
+    }
+}

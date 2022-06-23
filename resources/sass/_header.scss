@@ -1,0 +1,40 @@
+
+nav{
+    @include flexCen();
+    align-items: stretch;
+    width: $conWidth;
+    margin: auto;
+    justify-content: space-between;
+//logo
+    .logo{
+        padding: 10px 0;
+    }
+    //links
+    ul{ 
+        @include flexCen();
+        align-items: stretch;
+        //li
+        li{
+            @include flexCen();
+            margin: 0 10px;
+            border-bottom: 5px solid white;
+            &.active{border-bottom: 5px solid #0c7cec; }
+            &.active a{
+                color:$logoColor;
+            }
+            &:hover a{
+                color:$logoColor;
+            }
+            &:hover{
+                border-bottom: 5px solid #0c7cec; 
+            }
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #494949;
+                font-size: 14px;
+            }
+        }
+    }
+}

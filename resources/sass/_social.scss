@@ -1,0 +1,28 @@
+.container,
+.socials{@include flexCen(); img{margin: 0 10px;}}
+.socialsBar{
+    padding: 40px;
+    background-color: #303030;
+    justify-content: space-between;
+}
+.container{
+    width: $conWidth;
+    margin: auto;
+    justify-content: space-between;
+}
+span{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $logoColor;
+    font-size: 20px;
+}
+.signup{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border: $logoColor 2px solid;
+    a{
+        padding: 20px 15px;
+        display: inline-block;
+    }
+}

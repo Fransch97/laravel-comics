@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{{asset('favicon.ico')}}" >
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <title>Comics</title>
 </head>
@@ -15,6 +16,7 @@
     {{-- MAIN  --}}
     <main>
 
+        @include('partials.jambo')
         @yield('content')
 
     </main>
@@ -23,6 +25,10 @@
     {{-- FOOTER  --}}
     @include('partials.footer')
     {{-- END FOOTER  --}}
+
+    {{-- SOCIAL --}}
+    @include('partials.social')
+    {{-- END SOCIAL --}}
 
 </body>
 </html>

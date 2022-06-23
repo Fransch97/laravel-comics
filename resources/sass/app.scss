@@ -1,38 +1,13 @@
 //
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-
-    background-color: black;
-    color: white;
-    font-family: 'League Gothic', sans-serif;
-
-    header{
-        h1{
-            text-transform: uppercase;
-            font-size: 6rem;
-            text-align: center;
-        }
-    }
-
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 80%;
-        margin: auto;
-        .comic-card{
-            width: 190px;
-            margin: 40px;
-            font-size: 1.4rem;
-        }
-    }
-
-}
+@import '../sass/_mixin.scss';
+@import '../sass/_var.scss';
+@import '../sass/global';
+@import '../sass/header';
+@import '../sass/jambo';
+@import '../sass/content';
+@import '../sass/main';
+@import '../sass/merchandise';
+@import '../sass/footer';
+@import '../sass/social';
 

@@ -1,0 +1,29 @@
+
+.jambo{
+    position: relative;
+}
+.imgcontainer {
+    height: 45vh;
+    overflow: hidden;
+    max-height: 400px;
+    min-height: 220px;
+    img{
+        width: 100%;
+        
+        
+    }
+    
+}
+
+#titlespan{
+    padding: 10px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    background-color: #0c7cec;
+    position: absolute;
+    left: 15%;
+    bottom: -20px;
+}
